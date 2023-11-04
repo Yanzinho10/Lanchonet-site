@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Meu carrinho</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo">YanGomes</a>
+
+      <nav class="navbar">
+         <a href="home.html">Inicio</a>
+         <a href="about.html">Sobre</a>
+         <a href="menu.html">Cardápio</a>
+         <a href="orders.html">Ordens</a>
+         <a href="contact.html">Contato</a>
+      </nav>
+
+      <div class="icons">
+         <a href="search.html"><i class="fas fa-search"></i></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+         <p class="name">Yan Gomes</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">Perfil</a>
+            <a href="#" class="delete-btn">Sair</a>
+         </div>
+         <p class="account"><a href="login.html">Entrar</a> ou <a href="register.html">Registrar</a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<div class="heading">
+   <h3>carrinho de compras</h3>
+   <p><a href="home.html">Inicio </a> <span> / carrinho</span></p>
+</div>
+
+<section class="products">
+
+   <h1 class="title">Seu carrinho de compras</h1>
+
+   <div class="cart-total">
+      <p>Valor total : <span>R$ 9,00</span></p>
+      <a href="checkout.html" class="btn">pedidos de checkout</a>
+      </div>
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-times" type="submit" name="delete" onclick="return confirm('delete this item?')"></button>
+         <img src="uploaded_img/pizza-1.png" alt="">
+         <div class="name">Deliciosa pizza 01</div>
+         <div class="flex">
+            <div class="price"><span>R$</span>3,00</div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            <button type="submit" class="fas fa-edit"></button>
+         </div>
+         <div class="sub-total">subtotal : <span>R$ 3,00</span></div>
+      </div>
+
+      <div class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-times" type="submit" name="delete" onclick="return confirm('delete this item?')"></button>
+         <img src="uploaded_img/dish-2.png" alt="">
+         <div class="name">Prato principal 02</div>
+         <div class="flex">
+            <div class="price"><span>R$</span>3,00</div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            <button type="submit" class="fas fa-edit"></button>
+         </div>
+         <div class="sub-total">subtotal : <span>$ 3,00</span></div>
+      </div>
+
+      <div class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-times" type="submit" name="delete" onclick="return confirm('delete this item?')"></button>
+         <img src="uploaded_img/dessert-1.png" alt="">
+         <div class="name">Sobremesa deliciosa 01</div>
+         <div class="flex">
+            <div class="price"><span>R$</span>3,00</div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            <button type="submit" class="fas fa-edit"></button>
+         </div>
+         <div class="sub-total">subtotal : <span>R$ 3,00</span></div>
+      </div>
+
+   </div>
+
+   <div class="more-btn">
+      <a href="#" class="delete-btn" onclick="return confirm('Você deseja deletar tudo?');">excluir tudo</a>
+   </div>
+
+</section>
+
+
+<footer class="footer">
+
+   <section class="box-container">
+
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>Nosso email</h3>
+         <a href="/"><strong>Yangomes1080@gmail.com</strong></a>
+         <a href="/">Yangomes1080@gmail.com</a>
+      </div>
+
+      <div class="box">
+         <img src="images/clock-icon.png" alt="">
+         <h3>horário de funcionamento</h3>
+         <p>16:30h às 23:30h</p>
+      </div>
+
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>nosso endereço</h3>
+         <p>Belém-PA.<br>Bairro: Marambaia</p>
+      </div>
+
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>Nosso número</h3>
+         <a href="/">(91)9 8133-4571</a>
+         <a href="/">(91)9 8133-4571</a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy;<a href="/" target="black"><span>Yan Gomes Azevedo</span></a></div>
+
+</footer>
+
+<div class="loader">
+   <img src="images/preloader-lanchonete.gif" alt="">
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
